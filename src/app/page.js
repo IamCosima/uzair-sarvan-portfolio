@@ -1,100 +1,178 @@
 import Image from "next/image";
+import profilepic from './uzair_pic.png';
+import githubico from './github-mark-white.svg'
+import cosima from './cosima_pfp.jpg'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+        <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+        <Image className="rounded-4xl"
+          src={cosima}
+          alt="Picture of Uzair Sarvan"
+          width={200}
+          height={200}
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="flex flex-col">
+        <h1 className="text-7xl font-heading ">
+          Uzair Sarvan
+          </h1>
+          <br>
+          </br>
+          <h2 className="text-2xl  font-text" >
+          Aspiring Full Stack Developer🖥️ 
+          <br></br>
+          Location🗺️:
+          📌Cape Town, South Africa 🇿🇦
+          </h2>
+          <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+          alt="Github Icon"
+          width={20}
+          height={20}
+        />
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+          alt="Linkedin Icon"
+          width={20}
+          height={20}
+        />
         </div>
+        </section>
+        
+        <div className="">
+        <h2 className="text-2xl font-text">
+        🥪 Tech Stack
+        </h2>
+        <h3>
+          Programing Languages:
+        </h3>
+        <div className="grid grid-cols-4 gap-1">
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+          alt="Python Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Python</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          alt="JavaScript Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">JavaScript</p>
+        </div>
+
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          alt="Typescript Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Typescript</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+          alt="Kotlin Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Kotlin</p>
+        </div>
+        </div>
+        <h3>
+          Tools and Frameworks:
+        </h3>
+        <div className="grid grid-cols-4 gap-1">
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" 
+          alt="Node.js Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Node.js</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
+          alt="Next.js Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Next.js</p>
+        </div>
+
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          alt="React Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">React</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+          alt="Git Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Git</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src={githubico}
+          alt="Github Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">Github</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+          alt="MongoDB Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">MongoDB</p>
+        </div>
+        <div className="flex items-center p-2 rounded-xl">
+        <Image
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+          alt="MySQL Icon"
+          width={30}
+          height={30}
+        />
+        <p className="ml-2 mr-1 text-sm font-text">MySQL</p>
+        </div>
+        </div>
+        <div>
+        </div>
+        </div>
+        <h2 className="text-2xl  font-text">
+          Projects
+        </h2>
+        <h2 className="text-2xl  font-text">
+          Work Experience
+        </h2>
+        <h2>
+          Intrests and Hobbies 
+        </h2>
+
+
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        
       </footer>
     </div>
   );
