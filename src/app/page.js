@@ -2,6 +2,7 @@ import Image from "next/image";
 import profilepic from './uzair_pic.png';
 import githubico from './github-mark-white.svg'
 import cosima from './cosima_pfp.jpg'
+import downloadfile from './download-file.svg'
 
 export default function Home() {
   return (
@@ -26,18 +27,44 @@ export default function Home() {
           Location🗺️:
           📌Cape Town, South Africa 🇿🇦
           </h2>
+
+          <div className="mt-2 flex items-center gap-8">
+          <section className="flex" >
+          <div className=" bg-primary flex items-center p-2 rounded-xl">
           <Image
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+          src={downloadfile}
+          alt="Download Icon"
+          width={30}
+          height={30}
+          />
+          <p>Resume</p>
+          </div>
+          <a href="https://github.com/IamCosima" target="_blank" rel="noopener noreferrer">
+          <div className="flex items-center p-2 rounded-xl">
+          <Image
+          src={githubico}
           alt="Github Icon"
-          width={20}
-          height={20}
+          width={30}
+          height={30}
         />
+        <p className="ml-2 mr-1 text-sm font-text">Github Profile</p>
+        </div>
+        </a>
+        <a href="https://www.linkedin.com/in/uzair-sarvan-60bb1b227/" target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center p-2 rounded-xl">
         <Image
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
           alt="Linkedin Icon"
-          width={20}
-          height={20}
+          width={30}
+          height={30}
         />
+        <p className="ml-2 mr-1 text-sm font-text">Linkedin Profile</p>
+        </div>
+        </a>
+        </section>
+
+        </div>
+
         </div>
         </section>
         

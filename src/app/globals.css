@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pixelify+Sans:wght@400..700&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --foreground: #03191c;
-    --background: #f6fdfe;
+    --foreground: #050316;
+    --background: #fbfbfe;
     --primary: #26cbe8;
     --secondary: #94d5e6;
     --accent: #6e5dda;
@@ -27,13 +28,16 @@
   --text-2xl: 1.563rem;
   --text-3xl: 1.954rem;
   --text-4xl: 2.442rem;
-  --text-5xl: 3.053rem; 
+  --text-5xl: 3.053rem;
+  --color-primary: #26cbe8;
+  --color-secondary: #94d5e6;
+  --color-accent: #6e5dda;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #010809;
-    --foreground: #ededed;
+    --background: #010104;
+    --foreground: #ebe9fc;
     --primary: #17bcd9;
     --secondary: #195b6b;
     --accent: #3625a2;
