@@ -193,7 +193,7 @@ export default function Home() {
           Work Experience
         </h2>
         <h2>
-          Intrests and Hobbies 
+          Interests and Hobbies 
         </h2>
 
 
